@@ -5,4 +5,5 @@ Comment=First-run program that asks the user to log in to /e/ Cloud
 Exec=sh -c "test ! -f ~/.ecloud-firstrun && touch ~/.ecloud-firstrun && firefox https://ecloud.global"
 Terminal=false
 Type=Application
+NoDisplay=true
 X-GNOME-Autostart-enabled=true
