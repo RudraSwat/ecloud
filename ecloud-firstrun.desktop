@@ -2,7 +2,7 @@
 Name=/e/ Cloud First-Run
 GenericName=First-run program
 Comment=First-run program that asks the user to log in to /e/ Cloud
-Exec=sh -c "test ! -f ~/.ecloud-firstrun && touch ~/.ecloud-firstrun && firefox https://ecloud.global"
+Exec=sh -c "test ! -f ~/.ecloud-firstrun && touch ~/.ecloud-firstrun && sh -c \"snow 'https://ecloud.global/apps/files/' efiles || x-www-browser 'https://ecloud.global/apps/files/'\""
 Terminal=false
 Type=Application
 NoDisplay=true
